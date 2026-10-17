@@ -1,0 +1,17 @@
+{
+  "name": "ReRole",
+  "handle": "@rerole.ai",
+  "site": "rerole.ai",
+  "logo": "logo.jpg",
+  "font": "Inter",
+  "colors": {
+    "navy": "#0f172a",
+    "ink": "#0f172a",
+    "muted": "#64748b",
+    "paper": "#f8fafc",
+    "sky": "#0284c7",
+    "sky_light": "#38bdf8",
+    "emerald": "#059669",
+    "emerald_light": "#34d399"
+  }
+}
