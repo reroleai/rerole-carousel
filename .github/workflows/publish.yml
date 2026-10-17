@@ -1,6 +1,10 @@
 name: Publish to Instagram
 
 on:
+  # Pushing a new post file to main publishes it.
+  push:
+    branches: [main]
+    paths: ["posts/**"]
   workflow_dispatch:
     inputs:
       post:
@@ -27,9 +31,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -43,7 +47,7 @@ jobs:
           GRAPH_HOST: graph.instagram.com
           IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/out/{slug}
           POST_FILE: ${{ inputs.post }}
-          DRY_RUN: ${{ github.event_name == 'schedule' && 'false' || format('{0}', inputs.dry_run) }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && format('{0}', inputs.dry_run) || 'false' }}
         run: |
           args=(--next)
           if [ -n "$POST_FILE" ]; then args=("$POST_FILE"); fi
@@ -57,5 +61,6 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add published.json
             git commit -m "chore: record published post"
+            git pull --rebase origin main
             git push
           fi

@@ -8,7 +8,8 @@ brand.json                      ReRole colours, font, handle, logo (from rerole.
 render.py                       validates the copy, renders out/<slug>/01.jpg ... with headless Chrome
 publish.py                      posts a carousel through the Instagram API (dry run by default)
 published.json                  what has already been posted, so nothing posts twice
-.github/workflows/publish.yml   runs publish.py on GitHub, on a button press or a schedule
+watch_run.py                    waits for the GitHub run after a push and confirms the post
+.github/workflows/publish.yml   runs publish.py on GitHub: on push to posts/, a button press or a schedule
 ```
 
 **First-time setup (Meta app, GitHub repo, secrets): see [SETUP.md](SETUP.md).**
@@ -21,7 +22,11 @@ python3 publish.py posts/2026-10-14-communication-skills.json   # dry run, posts
 git add posts out && git commit -m "feat: add communication skills carousel" && git push
 ```
 
-GitHub then posts it, either when you press **Run workflow** or at the next scheduled time.
+**Pushing a new file in `posts/` to main publishes it.** Only push a post when it is ready.
+`python3 watch_run.py --sha $(git rev-parse HEAD) --slug <slug>` waits and confirms it went live.
+
+The easiest way to do all of this is the `/rerole-post` skill in Claude Code: it suggests
+4 topics, and a background agent writes, renders, pushes and confirms the one you pick.
 
 `render.py` refuses copy that breaks the carousel rules: 6-10 slides, cover ≤ 6 words,
 slide bodies ≤ 25 words, ≤ 5 hashtags, and alt text present.
