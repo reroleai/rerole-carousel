@@ -77,6 +77,8 @@ def main() -> int:
         entry = next((e for e in published_slugs(repo) if e["slug"] == args.slug), None)
         if entry:
             print(f"POSTED {args.slug}: media id {entry['media_id']} at {entry['published_at']}")
+            if entry.get("video_fallbacks"):
+                print(f"NOTE: slides {entry['video_fallbacks']} went up as stills (Instagram rejected the video)")
             return 0
         time.sleep(10)
     print(f"Run succeeded but {args.slug} is not in published.json. It may have posted a different queued post.")

@@ -12,6 +12,8 @@ watch_run.py                    waits for the GitHub run after a push and confir
 .github/workflows/publish.yml   runs publish.py on GitHub: on push to posts/, a button press or a schedule
 ```
 
+**What a slide can contain (themes, generative art, 18 infographic types, animation): see [slides/CATALOG.md](slides/CATALOG.md).**
+
 **First-time setup (Meta app, GitHub repo, secrets): see [SETUP.md](SETUP.md).**
 
 ## Make a post
@@ -28,8 +30,10 @@ git add posts out && git commit -m "feat: add communication skills carousel" && 
 The easiest way to do all of this is the `/rerole-post` skill in Claude Code: it suggests
 4 topics, and a background agent writes, renders, pushes and confirms the one you pick.
 
-`render.py` refuses copy that breaks the carousel rules: 6-10 slides, cover ≤ 6 words,
-slide bodies ≤ 25 words, ≤ 5 hashtags, and alt text present.
+`render.py` refuses copy that breaks the carousel rules (6-12 slides, cover ≤ 6 words, bodies ≤ 25 words,
+at least half the middle slides visual, ≤ 3 animated) and any slide whose text spills off the page.
+Animated slides become 8s looping MP4s; Instagram gets the video, with the still as a fallback.
+`python3 creative_brief.py` rolls a random theme, seed, slide count and visual mix for the next post.
 
 ## Tests
 

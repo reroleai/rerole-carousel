@@ -1,0 +1,70 @@
+{
+  "slug": "example-decode-jd",
+  "theme": "blueprint",
+  "seed": 4127,
+  "alt_text": "Cover slide reading Decode the job description, with a decoder diagram, from ReRole.",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "DECODE THE JOB DESCRIPTION",
+      "body": "What recruiters write vs what they actually screen for.",
+      "visual": {"type": "chips", "items": ["fast-paced", "self-starter", "wear many hats"], "strike": true},
+      "animate": true
+    },
+    {
+      "kind": "stake",
+      "headline": "MOST APPLICANTS SKIM IT",
+      "body": "Then they send the same resume to every role. The JD is the marking scheme. Read it like one.",
+      "visual": {"type": "stat", "value": "6", "suffix": " sec", "label": "a skim like this misses the screen",
+                 "note": "illustrative: how long a skim really takes"}
+    },
+    {
+      "kind": "content",
+      "headline": "TRANSLATE THE BUZZWORDS",
+      "visual": {"type": "decode", "rows": [
+        ["Fast-paced environment", "Priorities change weekly"],
+        ["Self-starter", "Little onboarding"],
+        ["Strong stakeholder skills", "You'll present to seniors"],
+        ["Exposure to SQL", "They'll test SQL"]
+      ]},
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "FIND THE MUST-HAVES",
+      "body": "Must-haves sit in the first bullets and repeat. Nice-to-haves say preferred.",
+      "visual": {"type": "checklist", "items": ["Listed first", "Repeated twice", "Has a number of years", "Says required"], "done": 4}
+    },
+    {
+      "kind": "content",
+      "headline": "MIRROR THEIR EXACT WORDS",
+      "visual": {"type": "compare",
+                 "left": {"title": "YOUR RESUME", "lines": ["Built dashboards"]},
+                 "right": {"title": "MATCHES THE JD", "lines": ["Built Power BI dashboards"]}}
+    },
+    {
+      "kind": "content",
+      "headline": "SCORE YOUR FIT",
+      "body": "Tick each must-have you can prove with a project. Under half? Skip it.",
+      "visual": {"type": "donut", "value": 75, "label": "3 of 4 must-haves proven", "note": "worth applying"}
+    },
+    {
+      "kind": "content",
+      "headline": "PREP FROM THE JD",
+      "visual": {"type": "flow", "items": [["Read the JD", "search"], ["Pull 5 keywords", "target"], ["One story each", "chat"], ["Interview ready", "check"]]},
+      "animate": true
+    },
+    {
+      "kind": "recap",
+      "headline": "THE JD DECODER",
+      "items": ["Translate the buzzwords", "Find the must-haves", "Mirror their words", "Score your fit", "Prep from it"]
+    },
+    {
+      "kind": "cta",
+      "headline": "SAVE THIS",
+      "body": "Open it next to the next JD you read."
+    }
+  ],
+  "caption": "The job description is the marking scheme. Most people skim it once.\\n\\nSave this.\\n\\n#jobsearch #resumetips #careeradvice",
+  "search_terms": ["job description", "resume tips"]
+}
