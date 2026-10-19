@@ -1,0 +1,126 @@
+{
+  "slug": "decode-offer-letter",
+  "theme": "blueprint",
+  "seed": 26668,
+  "alt_text": "Cover slide reading Your CTC isn't your salary, decode your offer letter before you sign it, from ReRole. Inside: a CTC breakdown drawing, offer letter phrases decoded, four clauses to check and how to ask HR for the salary breakup.",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "YOUR CTC ISN'T YOUR SALARY",
+      "body": "Decode your offer letter first."
+    },
+    {
+      "kind": "stake",
+      "headline": "CTC ÷ 12 ISN'T PAYDAY",
+      "body": "Your monthly in-hand will land below this. The gap is already written into your letter.",
+      "visual": {
+        "type": "stat",
+        "prefix": "₹",
+        "value": "50",
+        "suffix": ",000",
+        "label": "₹6 L CTC divided by 12",
+        "note": "illustrative example, not your real in-hand"
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "WHAT'S PACKED INTO CTC",
+      "visual": {
+        "type": "svg",
+        "markup": "<svg viewBox=\"0 0 840 700\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"40\" y=\"190\" width=\"380\" height=\"100\" fill=\"var(--accent)\" fill-opacity=\"0.28\" stroke=\"var(--accent)\" stroke-width=\"3\"/><rect x=\"420\" y=\"190\" width=\"70\" height=\"100\" fill=\"var(--accent)\" fill-opacity=\"0.12\" stroke=\"var(--accent)\" stroke-width=\"3\"/><rect x=\"490\" y=\"190\" width=\"60\" height=\"100\" fill=\"var(--accent)\" fill-opacity=\"0.12\" stroke=\"var(--accent)\" stroke-width=\"3\"/><rect x=\"550\" y=\"190\" width=\"50\" height=\"100\" fill=\"var(--accent)\" fill-opacity=\"0.12\" stroke=\"var(--accent)\" stroke-width=\"3\"/><rect x=\"600\" y=\"190\" width=\"110\" height=\"100\" fill=\"var(--accent)\" fill-opacity=\"0.5\" stroke=\"var(--accent)\" stroke-width=\"3\"/><rect x=\"710\" y=\"190\" width=\"90\" height=\"100\" fill=\"var(--accent)\" fill-opacity=\"0.5\" stroke=\"var(--accent)\" stroke-width=\"3\"/><text x=\"230\" y=\"253\" text-anchor=\"middle\" fill=\"var(--fg)\" font-size=\"38\" font-weight=\"700\" font-family=\"ui-monospace, Menlo, monospace\">FIXED PAY</text><g stroke=\"var(--fg)\" stroke-width=\"2.5\"><line x1=\"40\" y1=\"70\" x2=\"800\" y2=\"70\"/><line x1=\"40\" y1=\"54\" x2=\"40\" y2=\"86\"/><line x1=\"800\" y1=\"54\" x2=\"800\" y2=\"86\"/><path d=\"M40 70 l16 -8 v16z M800 70 l-16 -8 v16z\" fill=\"var(--fg)\"/></g><text x=\"420.0\" y=\"56\" text-anchor=\"middle\" fill=\"var(--fg)\" font-size=\"32\" font-weight=\"700\" font-family=\"ui-monospace, Menlo, monospace\">CTC (ONE YEAR)</text><g stroke=\"var(--accent2)\" stroke-width=\"2.5\"><line x1=\"40\" y1=\"150\" x2=\"360\" y2=\"150\"/><line x1=\"40\" y1=\"134\" x2=\"40\" y2=\"166\"/><line x1=\"360\" y1=\"134\" x2=\"360\" y2=\"166\"/><path d=\"M40 150 l16 -8 v16z M360 150 l-16 -8 v16z\" fill=\"var(--accent2)\"/></g><text x=\"200.0\" y=\"136\" text-anchor=\"middle\" fill=\"var(--accent2)\" font-size=\"32\" font-weight=\"700\" font-family=\"ui-monospace, Menlo, monospace\">IN-HAND x 12</text><polyline points=\"455,290 455,360 443,360\" fill=\"none\" stroke=\"var(--fg)\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"455\" cy=\"290\" r=\"6\" fill=\"var(--accent2)\"/><text x=\"437\" y=\"368\" text-anchor=\"end\" fill=\"var(--fg)\" font-size=\"34\" font-family=\"ui-monospace, Menlo, monospace\">EMPLOYER PF</text><polyline points=\"520,290 520,420 508,420\" fill=\"none\" stroke=\"var(--fg)\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"520\" cy=\"290\" r=\"6\" fill=\"var(--accent2)\"/><text x=\"502\" y=\"428\" text-anchor=\"end\" fill=\"var(--fg)\" font-size=\"34\" font-family=\"ui-monospace, Menlo, monospace\">GRATUITY</text><polyline points=\"575,290 575,480 563,480\" fill=\"none\" stroke=\"var(--fg)\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"575\" cy=\"290\" r=\"6\" fill=\"var(--accent2)\"/><text x=\"557\" y=\"488\" text-anchor=\"end\" fill=\"var(--fg)\" font-size=\"34\" font-family=\"ui-monospace, Menlo, monospace\">INSURANCE</text><polyline points=\"655,290 655,540 643,540\" fill=\"none\" stroke=\"var(--fg)\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"655\" cy=\"290\" r=\"6\" fill=\"var(--accent2)\"/><text x=\"637\" y=\"548\" text-anchor=\"end\" fill=\"var(--fg)\" font-size=\"34\" font-family=\"ui-monospace, Menlo, monospace\">VARIABLE PAY</text><polyline points=\"755,290 755,600 743,600\" fill=\"none\" stroke=\"var(--fg)\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"755\" cy=\"290\" r=\"6\" fill=\"var(--accent2)\"/><text x=\"737\" y=\"608\" text-anchor=\"end\" fill=\"var(--fg)\" font-size=\"34\" font-family=\"ui-monospace, Menlo, monospace\">JOINING BONUS</text><text x=\"40\" y=\"680\" fill=\"var(--muted)\" font-size=\"26\" font-family=\"ui-monospace, Menlo, monospace\">NOT TO SCALE</text></svg>"
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "WHAT THE LINES REALLY MEAN",
+      "visual": {
+        "type": "decode",
+        "left_title": "OFFER LETTER SAYS",
+        "right_title": "WHAT IT MEANS",
+        "rows": [
+          [
+            "Fixed + variable CTC",
+            "Variable depends on performance"
+          ],
+          [
+            "Employer contribution to PF",
+            "Goes to your PF, not your pay"
+          ],
+          [
+            "Joining bonus, subject to clawback",
+            "Leave early, pay it back"
+          ],
+          [
+            "Gratuity as per applicable law",
+            "Paid later, only if you stay"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "FOUR CLAUSES TO READ TWICE",
+      "body": "Terms vary by company. Find each one in your letter before you sign.",
+      "visual": {
+        "type": "icons",
+        "cols": 2,
+        "items": [
+          [
+            "money",
+            "Variable pay"
+          ],
+          [
+            "warning",
+            "Bonus clawback"
+          ],
+          [
+            "clock",
+            "Notice period"
+          ],
+          [
+            "lock",
+            "Service bond"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "ASK HR FOR THE BREAKUP",
+      "layout": "stack",
+      "visual": {
+        "type": "steps",
+        "items": [
+          "Ask for the yearly CTC breakup",
+          "Split fixed, variable, one-off",
+          "Ask for the monthly in-hand figure",
+          "Get bond and notice terms in writing"
+        ]
+      }
+    },
+    {
+      "kind": "recap",
+      "headline": "THE OFFER LETTER DECODER",
+      "items": [
+        "CTC ÷ 12 isn't in-hand",
+        "PF, gratuity, insurance sit in CTC",
+        "Variable pay isn't guaranteed",
+        "Joining bonus can be clawed back",
+        "Check notice period and bond",
+        "Ask HR for the breakup"
+      ]
+    },
+    {
+      "kind": "cta",
+      "headline": "SAVE THIS",
+      "body": "Open it when your offer letter lands, before you sign anything."
+    }
+  ],
+  "caption": "Your CTC is a yearly number. Your bank account sees something smaller.\n\nA ₹6 L CTC divided by 12 is ₹50,000. That's not what lands on payday. The CTC on your offer letter also carries your employer's PF share, gratuity, insurance, variable pay and any joining bonus. Some of it comes later, some only if targets are hit, some never reaches your account each month.\n\nThen there are the clauses. A joining bonus can come with a clawback if you leave early. Notice periods and service bonds change from company to company, so read yours line by line.\n\nBefore you sign, email HR and ask for the CTC breakup: fixed, variable, one-time, and the monthly figure you'll actually see. It's a normal question. Nobody serious will mind.\n\n(₹ figures above are an illustrative example, not a tax calculation.)\n\nSave this for the day your offer letter arrives.\n\n#offerletter #freshers #campusplacement",
+  "search_terms": [
+    "offer letter",
+    "CTC breakup"
+  ]
+}
