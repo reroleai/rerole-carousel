@@ -1,0 +1,13 @@
+You don't need to start over to get into tech. You need a map.
+
+A career switch feels like going back to zero. It isn't. If you've run a store, a clinic shift or a 6-person sales team, you already do stakeholder work, process mapping and weekly reporting in Excel. Those are transferable skills, and Business Analyst, Product Ops and Customer Success teams hire for them.
+
+Write them down first. Skills in rows, 3 target roles in columns. Tick what carries over. The blanks are your gap list.
+
+Then pick one gap. Only one. SQL, Jira, Power BI: whichever shows up most in the job posts you'd actually apply to. Learn it, then use it on a small project from your old industry, like a sales dashboard built on real store data you're allowed to share. That project is your proof.
+
+Last, rewrite your resume and LinkedIn headline so they point forward. "Store Manager" says where you were. "Retail ops moving into analytics" says where you're going.
+
+Save this so you can tick the next row when you're ready.
+
+#careerswitch #careerchange #techjobs

@@ -1,0 +1,153 @@
+{
+  "slug": "career-switch-roadmap",
+  "theme": "aurora",
+  "seed": 58502,
+  "alt_text": "Cover slide reading Switch careers without starting over, a four step roadmap from non-tech into tech, from ReRole. Inside: a flow from your skills to one gap, proof and a new role, a transferable skills grid, tech jargon decoded, and a before and after resume line.",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "SWITCH CAREERS WITHOUT STARTING OVER",
+      "body": "A four step roadmap from non-tech into tech."
+    },
+    {
+      "kind": "stake",
+      "headline": "YOUR OLD JOB IS THE HEAD START",
+      "visual": {
+        "type": "flow",
+        "items": [
+          [
+            "Your skills",
+            "briefcase"
+          ],
+          [
+            "One gap",
+            "target"
+          ],
+          [
+            "Proof",
+            "code"
+          ],
+          [
+            "New role",
+            "rocket"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "MAP YOUR TRANSFERABLE SKILLS",
+      "body": "Ticked rows already carry over. Blank rows are your gaps.",
+      "visual": {
+        "type": "matrix",
+        "cols": [
+          "BA",
+          "PROD OPS",
+          "CSM"
+        ],
+        "rows": [
+          "Stakeholders",
+          "Process",
+          "Reporting",
+          "SQL",
+          "Jira"
+        ],
+        "filled": 3
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "LEARN THE WORDS THEY USE",
+      "visual": {
+        "type": "decode",
+        "left_title": "TECH SAYS",
+        "right_title": "YOU ALREADY DID",
+        "rows": [
+          [
+            "Stakeholder management",
+            "Kept clients and your boss aligned"
+          ],
+          [
+            "Backlog",
+            "Your ranked to-do list"
+          ],
+          [
+            "Sprint",
+            "A short, fixed work cycle"
+          ],
+          [
+            "KPI",
+            "The number your manager checked"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "CLOSE ONE GAP AT A TIME",
+      "body": "Pick the blank row most job posts ask for. Learn it, use it once, then move on.",
+      "visual": {
+        "type": "stat",
+        "value": "6",
+        "suffix": " weeks",
+        "label": "one skill, one sprint",
+        "note": "illustrative example, your pace will vary"
+      },
+      "layout": "stack"
+    },
+    {
+      "kind": "content",
+      "headline": "BUILD PROOF THEY CAN OPEN",
+      "body": "One small project built on data from your old industry.",
+      "visual": {
+        "type": "quote",
+        "text": "A link they can open beats a skill they have to take on trust."
+      },
+      "layout": "stack"
+    },
+    {
+      "kind": "content",
+      "headline": "REPOSITION YOUR RESUME AND LINKEDIN",
+      "visual": {
+        "type": "compare",
+        "left": {
+          "title": "BEFORE",
+          "lines": [
+            "Store manager",
+            "Handled weekly sales"
+          ]
+        },
+        "right": {
+          "title": "AFTER",
+          "lines": [
+            "Retail ops to analytics",
+            "Built weekly sales reports in SQL"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "recap",
+      "headline": "THE SWITCH ROADMAP",
+      "items": [
+        "Map your transferable skills",
+        "Learn the words they use",
+        "Close one gap at a time",
+        "Build proof they can open",
+        "Reposition resume and LinkedIn"
+      ]
+    },
+    {
+      "kind": "cta",
+      "headline": "SAVE THIS",
+      "body": "Come back each time you close a gap and tick the next row."
+    }
+  ],
+  "caption": "You don't need to start over to get into tech. You need a map.\n\nA career switch feels like going back to zero. It isn't. If you've run a store, a clinic shift or a 6-person sales team, you already do stakeholder work, process mapping and weekly reporting in Excel. Those are transferable skills, and Business Analyst, Product Ops and Customer Success teams hire for them.\n\nWrite them down first. Skills in rows, 3 target roles in columns. Tick what carries over. The blanks are your gap list.\n\nThen pick one gap. Only one. SQL, Jira, Power BI: whichever shows up most in the job posts you'd actually apply to. Learn it, then use it on a small project from your old industry, like a sales dashboard built on real store data you're allowed to share. That project is your proof.\n\nLast, rewrite your resume and LinkedIn headline so they point forward. \"Store Manager\" says where you were. \"Retail ops moving into analytics\" says where you're going.\n\nSave this so you can tick the next row when you're ready.\n\n#careerswitch #careerchange #techjobs",
+  "search_terms": [
+    "career switch",
+    "transferable skills"
+  ]
+}
