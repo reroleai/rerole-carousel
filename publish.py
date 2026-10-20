@@ -36,6 +36,10 @@ LEDGER = ROOT / "published.json"
 REQUIRED_ENV = ("IG_USER_ID", "IG_ACCESS_TOKEN", "IMAGE_BASE_URL")
 POLL_INTERVAL_S = 3
 POLL_ATTEMPTS = 60
+WARM_ATTEMPTS = 3
+WARM_TIMEOUT_S = 60
+WARM_PAUSE_S = 10
+VIDEO_ATTEMPTS = 2
 HTTP_TIMEOUT_S = 60
 
 
@@ -139,18 +143,48 @@ def next_post_path() -> Path | None:
     return None
 
 
+def warm_cdn(url: str) -> bool:
+    """Download the file once so the CDN has it cached before Instagram asks.
+
+    A brand-new commit is a cold cache on jsDelivr: its first fetch goes back to GitHub and
+    can be slow enough for Instagram's fetcher to give up and reject the video.
+    """
+    for attempt in range(1, WARM_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(url, timeout=WARM_TIMEOUT_S) as response:
+                response.read()
+                if response.headers.get_content_type() == "video/mp4":
+                    return True
+        except (urllib.error.URLError, TimeoutError) as err:
+            print(f"  warming {url.rsplit('/', 1)[-1]} attempt {attempt}: {err}")
+        time.sleep(WARM_PAUSE_S)
+    return False
+
+
+def create_video_child(config: dict, url: str) -> str:
+    media_url = f"{config['api']}/{config['user_id']}/media"
+    child = graph("POST", media_url, {"media_type": "VIDEO", "video_url": url,
+                                      "is_carousel_item": "true", "access_token": config["token"]})
+    wait_until_ready(config, child["id"])
+    return child["id"]
+
+
 def create_child(config: dict, item: dict) -> tuple[str, bool]:
     """Upload one slide. Returns (container id, whether a video fell back to its still)."""
     media_url = f"{config['api']}/{config['user_id']}/media"
     if item["video"]:
-        try:
-            child = graph("POST", media_url, {"media_type": "VIDEO", "video_url": item["video"],
-                                              "is_carousel_item": "true", "access_token": config["token"]})
-            wait_until_ready(config, child["id"])
-            print(f"  uploaded {item['video'].rsplit('/', 1)[-1]} (video)")
-            return child["id"], False
-        except SystemExit as err:
-            print(f"  video rejected, using the still instead: {err}")
+        name = item["video"].rsplit("/", 1)[-1]
+        if not warm_cdn(item["video"]):
+            print(f"  {name} never came back as video/mp4 from the CDN")
+        for attempt in range(1, VIDEO_ATTEMPTS + 1):
+            try:
+                child_id = create_video_child(config, item["video"])
+                print(f"  uploaded {name} (video)")
+                return child_id, False
+            except SystemExit as err:
+                print(f"  {name} rejected on attempt {attempt}: {err}")
+                time.sleep(WARM_PAUSE_S)
+        print(f"  using the still for {name} instead")
     child = graph("POST", media_url, {"image_url": item["image"], "is_carousel_item": "true",
                                       "access_token": config["token"]})
     wait_until_ready(config, child["id"])

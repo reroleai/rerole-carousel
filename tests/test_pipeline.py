@@ -170,6 +170,25 @@ class PublishTest(unittest.TestCase):
         self.assertEqual(items[1]["video"], f"https://v.example/{POST['slug']}/02.mp4")
         self.assertEqual(items[1]["image"], f"https://i.example/{POST['slug']}/02.jpg")
 
+    def test_video_retries_once_then_falls_back_to_still(self):
+        config = {"api": "https://g.example", "user_id": "1", "token": "t"}
+        item = {"video": "https://v.example/02.mp4", "image": "https://i.example/02.jpg"}
+        with mock.patch.object(publish, "warm_cdn", return_value=True), \
+                mock.patch.object(publish, "create_video_child", side_effect=SystemExit("rejected")) as video, \
+                mock.patch.object(publish, "graph", return_value={"id": "img1"}), \
+                mock.patch.object(publish, "wait_until_ready"), mock.patch.object(publish.time, "sleep"):
+            child_id, fell_back = publish.create_child(config, item)
+        self.assertEqual(video.call_count, publish.VIDEO_ATTEMPTS)
+        self.assertEqual((child_id, fell_back), ("img1", True))
+
+    def test_video_succeeds_on_retry(self):
+        config = {"api": "https://g.example", "user_id": "1", "token": "t"}
+        item = {"video": "https://v.example/02.mp4", "image": "https://i.example/02.jpg"}
+        with mock.patch.object(publish, "warm_cdn", return_value=True), \
+                mock.patch.object(publish, "create_video_child", side_effect=[SystemExit("cold"), "vid1"]), \
+                mock.patch.object(publish.time, "sleep"):
+            self.assertEqual(publish.create_child(config, item), ("vid1", False))
+
     def test_config_requires_env(self):
         with mock.patch.dict(os.environ, {}, clear=True):
             with self.assertRaises(SystemExit):
