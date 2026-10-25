@@ -1,0 +1,13 @@
+One 2-column table can sink your resume before a recruiter opens it.
+
+Many companies run applications through an applicant tracking system first. It pulls your file apart into fields like name, job titles and skills, then ranks you against the job description. If the parse goes wrong, a strong candidate can look like a weak match.
+
+The usual culprits are small. A two-column table. Your email sitting in the page header. Skills shown as logos. A section called My Story instead of Work Experience. These ATS resume problems are easy to miss because the page looks fine to you.
+
+Keywords matter too. If the job post says Salesforce and stakeholder management, and your resume says CRM tools and working with teams, a keyword ranker may not connect them. Use their words where they're true for you.
+
+Workday, Greenhouse, Lever and Taleo don't all parse the same way, so treat these as resume tips that lower the risk, not guarantees. The quickest check: paste your resume into a plain text file and see what survives.
+
+Save this for your next application.
+
+#resumetips #jobsearch #atsresume

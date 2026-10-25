@@ -1,0 +1,240 @@
+{
+  "slug": "ats-resume-mistakes",
+  "theme": "terminal",
+  "seed": 88431,
+  "alt_text": "Cover slide reading Your resume never reached humans, with a terminal showing an ATS scan printing parse errors, from ReRole. Inside: tables and text boxes, contact info in headers, skills as icons, creative section titles, missing JD keywords, unexpanded acronyms and risky file types, each with a fix, plus a recap.",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "YOUR RESUME NEVER REACHED HUMANS",
+      "body": "7 habits that can sink it in the ATS scan.",
+      "visual": {
+        "type": "terminal",
+        "lines": [
+          [
+            "SCAN",
+            "resume_final.pdf",
+            "info"
+          ],
+          [
+            "WARN",
+            "table: 2 columns merged",
+            "bad"
+          ],
+          [
+            "ERR",
+            "header: email not found",
+            "bad"
+          ],
+          [
+            "ERR",
+            "skills: icons, 0 parsed",
+            "bad"
+          ],
+          [
+            "RANK",
+            "keyword match: low",
+            "bad"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "stake",
+      "headline": "SOFTWARE READS IT FIRST",
+      "body": "Many ATS parse your file into fields, then rank it. A scrambled parse can rank low before a recruiter looks.",
+      "visual": {
+        "type": "flow",
+        "items": [
+          [
+            "Upload",
+            "resume"
+          ],
+          [
+            "Parse",
+            "code"
+          ],
+          [
+            "Rank",
+            "chart"
+          ],
+          [
+            "Recruiter",
+            "user"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "DROP TABLES AND TEXT BOXES",
+      "body": "Some parsers read across columns and mix your lines together.",
+      "visual": {
+        "type": "compare",
+        "left": {
+          "title": "RISKY",
+          "lines": [
+            "Two-column table",
+            "Text box sidebar"
+          ]
+        },
+        "right": {
+          "title": "SAFER",
+          "lines": [
+            "One column",
+            "Plain text, top to bottom"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "KEEP CONTACT INFO IN THE BODY",
+      "body": "Many ATS skip page headers and footers. Put your name, email and phone in the main text.",
+      "visual": {
+        "type": "code",
+        "lines": [
+          "candidate = {",
+          "  \"name\": null,",
+          "  \"email\": null,",
+          "  \"phone\": null,",
+          "  \"source\": \"page header, skipped\"",
+          "}"
+        ],
+        "highlight": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "WRITE SKILLS AS WORDS",
+      "body": "A logo or star rating can't be read as text. Type the skill name.",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "Python",
+          "SQL",
+          "Tableau",
+          "Salesforce",
+          "Excel"
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "USE STANDARD SECTION TITLES",
+      "visual": {
+        "type": "decode",
+        "left_title": "CREATIVE",
+        "right_title": "ATS FRIENDLY",
+        "rows": [
+          [
+            "My Journey",
+            "Work Experience"
+          ],
+          [
+            "Where I Learned",
+            "Education"
+          ],
+          [
+            "My Toolbox",
+            "Skills"
+          ],
+          [
+            "Hello, I'm Sam",
+            "Summary"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "MATCH THE JOB DESCRIPTION",
+      "body": "Many ATS rank by keyword match. Use the JD's exact terms where they're true for you.",
+      "visual": {
+        "type": "donut",
+        "value": 50,
+        "label": "3 of 6 JD keywords found",
+        "note": "illustrative example, not a real score"
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "SPELL OUT ACRONYMS ONCE",
+      "body": "The JD might search for either form. Give it both.",
+      "visual": {
+        "type": "compare",
+        "left": {
+          "title": "ONE FORM",
+          "lines": [
+            "SEO",
+            "CRM"
+          ]
+        },
+        "right": {
+          "title": "BOTH FORMS",
+          "lines": [
+            "Search Engine Optimization (SEO)",
+            "Customer Relationship Management (CRM)"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "SEND A FILE IT CAN READ",
+      "body": "Follow the posting. If it doesn't say, a .docx or text-based PDF is safest.",
+      "visual": {
+        "type": "checklist",
+        "items": [
+          ".docx",
+          "Text-based PDF",
+          "Scanned PDF",
+          "JPG or PNG",
+          ".pages"
+        ],
+        "done": 2
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "TEST IT BEFORE YOU SEND",
+      "visual": {
+        "type": "steps",
+        "items": [
+          "Copy all text into a plain .txt file",
+          "Check name, email and phone survived",
+          "Check titles and dates stay in order",
+          "Fix anything that came out scrambled"
+        ]
+      }
+    },
+    {
+      "kind": "recap",
+      "headline": "THE ATS CHECKLIST",
+      "items": [
+        "One column, no tables",
+        "Contact info in the body",
+        "Skills as words",
+        "Standard section titles",
+        "JD keywords, both acronym forms",
+        ".docx or text PDF",
+        "Paste test before sending"
+      ]
+    },
+    {
+      "kind": "cta",
+      "headline": "SAVE THIS",
+      "body": "Run the checklist on your resume before the next application."
+    }
+  ],
+  "caption": "One 2-column table can sink your resume before a recruiter opens it.\n\nMany companies run applications through an applicant tracking system first. It pulls your file apart into fields like name, job titles and skills, then ranks you against the job description. If the parse goes wrong, a strong candidate can look like a weak match.\n\nThe usual culprits are small. A two-column table. Your email sitting in the page header. Skills shown as logos. A section called My Story instead of Work Experience. These ATS resume problems are easy to miss because the page looks fine to you.\n\nKeywords matter too. If the job post says Salesforce and stakeholder management, and your resume says CRM tools and working with teams, a keyword ranker may not connect them. Use their words where they're true for you.\n\nWorkday, Greenhouse, Lever and Taleo don't all parse the same way, so treat these as resume tips that lower the risk, not guarantees. The quickest check: paste your resume into a plain text file and see what survives.\n\nSave this for your next application.\n\n#resumetips #jobsearch #atsresume",
+  "search_terms": [
+    "ATS resume",
+    "resume tips"
+  ]
+}
