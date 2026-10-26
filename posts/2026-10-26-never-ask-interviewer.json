@@ -1,0 +1,207 @@
+{
+  "slug": "never-ask-interviewer",
+  "theme": "blueprint",
+  "seed": 85522,
+  "alt_text": "Cover slide reading The question that ends interviews, with a search bar typing What does your company do, from ReRole.",
+  "search_terms": [
+    "interview questions",
+    "questions to ask the interviewer"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "THE QUESTION THAT ENDS INTERVIEWS",
+      "body": "Any questions for us? Ask these instead.",
+      "visual": {
+        "type": "search",
+        "query": "what does your company do",
+        "results": 3
+      },
+      "animate": true
+    },
+    {
+      "kind": "stake",
+      "headline": "YOUR QUESTIONS GET SCORED TOO",
+      "body": "The last five minutes are the last thing they remember. One lazy question can undo a strong hour.",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "What do you do?",
+          "How much leave?",
+          "Did I get it?",
+          "Promotion when?"
+        ],
+        "strike": true
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "WHAT THE INTERVIEWER HEARS",
+      "visual": {
+        "type": "decode",
+        "left_title": "YOU ASK",
+        "right_title": "THEY HEAR",
+        "rows": [
+          [
+            "What does your company do?",
+            "I didn't open your website"
+          ],
+          [
+            "How much time off?",
+            "I'm already planning breaks"
+          ],
+          [
+            "Did I get the job?",
+            "Please grade me right now"
+          ],
+          [
+            "How soon is promotion?",
+            "This job is a stopover"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "NEVER ASK WHAT THEY DO",
+      "body": "Read their site and one recent news item. Then ask about it.",
+      "visual": {
+        "type": "compare",
+        "left": {
+          "title": "SINKS YOU",
+          "lines": [
+            "So, what does your company do?"
+          ]
+        },
+        "right": {
+          "title": "ASK INSTEAD",
+          "lines": [
+            "You just launched in Pune. How does this role support that?"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "SALARY AND WFH COME LATER",
+      "body": "Fair questions, wrong moment. Asked first, they sound like all you want.",
+      "visual": {
+        "type": "timeline",
+        "items": [
+          [
+            "Interview",
+            "The work, the team, the goals"
+          ],
+          [
+            "Recruiter call",
+            "Pay range and benefits"
+          ],
+          [
+            "Offer stage",
+            "Leave, WFH, negotiate"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "DON'T ASK IF YOU GOT IT",
+      "body": "They usually can't answer yet. Ask for the timeline instead.",
+      "surface": "paper",
+      "visual": {
+        "type": "terminal",
+        "lines": [
+          [
+            "ASK",
+            "Did I get the job?",
+            "bad"
+          ],
+          [
+            "HEAR",
+            "pressure, no answer possible",
+            "bad"
+          ],
+          [
+            "ASK",
+            "What are the next steps?",
+            "ok"
+          ],
+          [
+            "ASK",
+            "When should I expect to hear?",
+            "ok"
+          ],
+          [
+            "GET",
+            "a date you can follow up on",
+            "info"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "headline": "DON'T JUMP TO PROMOTION",
+      "body": "Ask what great looks like in year one. Same ambition, better signal.",
+      "visual": {
+        "type": "svg",
+        "markup": "<svg viewBox=\"0 0 840 570\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" stroke=\"var(--fg)\" stroke-width=\"4\"><path d=\"M60 500 H260 V390 H460 V280 H660 V170 H800\"/></g><g fill=\"var(--muted)\" font-family=\"monospace\" font-size=\"26\"><text x=\"90\" y=\"480\">DAY 1</text><text x=\"290\" y=\"370\">MONTH 3</text><text x=\"490\" y=\"260\">YEAR 1</text></g><text x=\"560\" y=\"110\" fill=\"var(--accent2)\" font-family=\"monospace\" font-size=\"30\" font-weight=\"700\">PROMOTION?</text><circle cx=\"150\" cy=\"430\" r=\"22\" fill=\"var(--accent)\"/><path d=\"M150 400 C 250 140, 560 100, 730 160\" fill=\"none\" stroke=\"var(--accent2)\" stroke-width=\"4\" stroke-dasharray=\"14 12\"/><path d=\"M730 160 l-32 -4 l16 26 z\" fill=\"var(--accent2)\"/><g stroke=\"var(--accent)\" stroke-width=\"3\"><line x1=\"260\" y1=\"540\" x2=\"660\" y2=\"540\"/><line x1=\"260\" y1=\"525\" x2=\"260\" y2=\"555\"/><line x1=\"660\" y1=\"525\" x2=\"660\" y2=\"555\"/></g><text x=\"410\" y=\"525\" fill=\"var(--accent)\" font-family=\"monospace\" font-size=\"24\">SKIPPED</text></svg>"
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "NEVER HAVE ZERO QUESTIONS",
+      "body": "\"No, you covered it all\" reads as low interest. Bring three in case two get answered.",
+      "visual": {
+        "type": "checklist",
+        "items": [
+          "One about the role",
+          "One about the team",
+          "One about the interviewer"
+        ],
+        "done": 3
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "STEAL THESE THREE",
+      "visual": {
+        "type": "steps",
+        "items": [
+          "What does success look like at 90 days?",
+          "What's the hardest part of this role?",
+          "What do your best people do differently?"
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "headline": "END WITH THE CLOSER",
+      "visual": {
+        "type": "quote",
+        "text": "Is there anything in my background that makes you hesitate?",
+        "who": "lets you answer a doubt while you're still in the room"
+      }
+    },
+    {
+      "kind": "recap",
+      "headline": "THE END-OF-INTERVIEW RULES",
+      "items": [
+        "Research what they do first",
+        "Pay and WFH come later",
+        "Ask next steps, not results",
+        "Ask about year one, not promotion",
+        "Bring three questions",
+        "Close by asking about doubts"
+      ]
+    },
+    {
+      "kind": "cta",
+      "headline": "SAVE THIS",
+      "body": "Read it the night before your next interview."
+    }
+  ],
+  "caption": "One question in the last 5 minutes can undo a 45-minute interview: \"So, what does your company do?\"\n\nIt happens right after they ask if you have any questions for them. Most people treat that bit as a formality. Wrong. Interviewers write down what you ask, and your interview questions get read as closely as your answers.\n\nThe ones that hurt are ordinary. Asking what the company does when their LinkedIn page and last 3 press releases are one search away. Opening with salary, 24 days of leave or 2 WFH days. \"Did I get it?\" while 4 other candidates are still booked that week. Asking about promotion before day 1.\n\nPay and remote work are fair to ask about. Just later, with the recruiter or at the offer stage.\n\nAsk about the work instead. What does success look like at 90 days? What's the hardest part of this role? My favourite of all the questions to ask the interviewer is the closer: is there anything in my background that makes you hesitate? You get to fix the doubt while you're still in the room, not in an email 2 days later.\n\nSave this for the night before your next interview.\n\n#interviewtips #jobsearch #careeradvice"
+}
