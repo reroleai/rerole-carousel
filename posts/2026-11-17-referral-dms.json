@@ -1,0 +1,223 @@
+{
+  "slug": "referral-dms",
+  "theme": "terminal",
+  "seed": 63913,
+  "alt_text": "Cover slide reading Stop saying please refer me, with the phrases Please refer me, Any openings and Hope you're well crossed out, from ReRole.",
+  "search_terms": [
+    "referral message",
+    "LinkedIn referral"
+  ],
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "STOP SAYING PLEASE REFER ME",
+      "body": "Rewrite the DM so a stranger says yes.",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "Please refer me",
+          "Any openings?",
+          "Hope you're well"
+        ],
+        "strike": true
+      },
+      "animate": true
+    },
+    {
+      "kind": "stake",
+      "headline": "A REFERRAL PUTS THEIR NAME ON YOU",
+      "body": "You're asking a stranger to vouch for you. Make saying yes safe, fast and easy.",
+      "visual": {
+        "type": "svg",
+        "markup": "<svg viewBox=\"0 0 840 420\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"40\" y=\"40\" width=\"470\" height=\"130\" rx=\"22\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"4\"/><text x=\"72\" y=\"98\" font-family=\"monospace\" font-size=\"27\" fill=\"var(--muted)\">you &gt; can you refer me?</text><text x=\"72\" y=\"142\" font-family=\"monospace\" font-size=\"24\" fill=\"var(--muted)\">sent 09:14</text><line x1=\"510\" y1=\"105\" x2=\"560\" y2=\"230\" stroke=\"var(--accent)\" stroke-width=\"4\" stroke-dasharray=\"10 10\"/><rect x=\"380\" y=\"230\" width=\"420\" height=\"150\" rx=\"22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"5\"/><text x=\"412\" y=\"285\" font-family=\"monospace\" font-size=\"26\" fill=\"var(--muted)\">REFERRED BY</text><text x=\"412\" y=\"340\" font-family=\"monospace\" font-size=\"38\" font-weight=\"bold\" fill=\"var(--accent)\">their_name</text><circle cx=\"740\" cy=\"305\" r=\"30\" fill=\"none\" stroke=\"var(--accent2)\" stroke-width=\"5\"/><text x=\"740\" y=\"318\" text-anchor=\"middle\" font-family=\"monospace\" font-size=\"34\" font-weight=\"bold\" fill=\"var(--accent2)\">!</text></svg>"
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "DECODE THE NEEDY DRAFT",
+      "visual": {
+        "type": "decode",
+        "left_title": "YOU WROTE",
+        "right_title": "THEY HEAR",
+        "rows": [
+          [
+            "Hope you're well!",
+            "Copy-paste incoming"
+          ],
+          [
+            "I'm open to any role",
+            "No idea what you want"
+          ],
+          [
+            "Please refer me",
+            "Risk your name for me"
+          ],
+          [
+            "Let me know!",
+            "You do the homework"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "NAME ONE ROLE",
+      "body": "A job title and ID gives them something to paste into the referral form.",
+      "visual": {
+        "type": "compare",
+        "left": {
+          "title": "VAGUE",
+          "lines": [
+            "Any openings on your team?"
+          ]
+        },
+        "right": {
+          "title": "SPECIFIC",
+          "lines": [
+            "Backend Engineer, job ID 4821"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "PROVE FIT IN ONE LINE",
+      "body": "One result with a number. Skip the life story.",
+      "visual": {
+        "type": "quote",
+        "text": "I built a retry service that cut failed payments 12%.",
+        "who": "example proof line"
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "GIVE THEM AN EASY OUT",
+      "visual": {
+        "type": "terminal",
+        "lines": [
+          [
+            "ASK",
+            "Open to referring me for this role?",
+            "info"
+          ],
+          [
+            "OUT",
+            "Or point me to who's hiring.",
+            "ok"
+          ],
+          [
+            "NO",
+            "Costs them nothing. Trust goes up.",
+            "ok"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "DO THE PAPERWORK FOR THEM",
+      "visual": {
+        "type": "checklist",
+        "items": [
+          "Job link",
+          "Job ID",
+          "Resume as a PDF",
+          "3-line blurb they can paste"
+        ],
+        "done": 4
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "STAY UNDER 300 CHARACTERS",
+      "body": "Short enough to read in one glance on a phone. If it needs scrolling, cut it.",
+      "visual": {
+        "type": "donut",
+        "value": 80,
+        "label": "240 of 300 characters",
+        "note": "example DM length"
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "DECODE THE REWRITE",
+      "visual": {
+        "type": "decode",
+        "left_title": "YOU WRITE",
+        "right_title": "WHY IT WORKS",
+        "rows": [
+          [
+            "Loved your post on API retries",
+            "Proves you're not spamming"
+          ],
+          [
+            "Applying for Backend Eng, ID 4821",
+            "One role, easy to find"
+          ],
+          [
+            "Cut failed payments 12%",
+            "Safe to vouch for"
+          ],
+          [
+            "Refer me, or point me elsewhere?",
+            "Easy yes, easy out"
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "content",
+      "layout": "number",
+      "headline": "NUDGE ONCE, THEN LET GO",
+      "visual": {
+        "type": "timeline",
+        "items": [
+          [
+            "Day 0",
+            "Connect, no ask"
+          ],
+          [
+            "Day 2",
+            "Send the DM"
+          ],
+          [
+            "Day 7",
+            "One short nudge"
+          ],
+          [
+            "Day 14",
+            "Move on, no grudge"
+          ]
+        ]
+      },
+      "animate": true
+    },
+    {
+      "kind": "recap",
+      "headline": "THE REFERRAL DM",
+      "items": [
+        "Drop the needy lines",
+        "Name one role and ID",
+        "Prove fit in one line",
+        "Give them an easy out",
+        "Attach link, ID, resume, blurb",
+        "Under 300 characters",
+        "Nudge once, then let go"
+      ]
+    },
+    {
+      "kind": "cta",
+      "headline": "SAVE THIS",
+      "body": "Open it before you message your next stranger at a dream company."
+    }
+  ],
+  "caption": "\"Please refer me\" is the fastest way to get left on read.\n\nThe engineer you're messaging at Stripe or Shopify is putting their name on you. So a good referral message makes that feel safe. One role, like Backend Engineer, job ID 4821. One line of proof, like \"cut failed payments 12%\". And an easy way to say no.\n\nAsking for a LinkedIn referral? Do their paperwork. Job link, job ID, resume PDF, a 3-line blurb they can paste. Keep the DM itself under 300 characters.\n\nNudge once on day 7. Silent by day 14? Move on.\n\nSave this for the next DM you're nervous to send.\n\n#referral #jobsearch #linkedintips"
+}
