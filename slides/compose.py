@@ -49,8 +49,9 @@ h2 { font-weight: 850; line-height: 1.02; letter-spacing: -0.02em; }
   border-radius: 999px; background: var(--grad); color: #fff; }
 .l-number .content { display: grid; grid-template-columns: 220px 1fr; column-gap: 34px; align-content: center; }
 .l-number .content > * { grid-column: 2; }
-.l-number .bignum { grid-column: 1; grid-row: 1 / span 3; font-size: 230px; font-weight: 900; line-height: .85;
-  letter-spacing: -0.06em; align-self: start; }
+.l-number .bignum { grid-column: 1; grid-row: 1 / span 3; font-size: 190px; font-weight: 900; line-height: .85;
+  letter-spacing: -0.06em; align-self: start; justify-self: start; width: max-content; white-space: nowrap;
+  font-variant-numeric: tabular-nums; }
 .l-number .content > .v { grid-column: 1 / span 2; }
 .l-center .content { align-items: center; text-align: center; }
 .l-center .content > .v { align-items: stretch; text-align: left; }
